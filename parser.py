@@ -7,6 +7,11 @@ class TagData:
     cnt: int
     timestamp: str
 
+@dataclass
+class TagInfo:
+    id: str
+    description: str
+
 
 def parse_tag_line(line: str) -> TagData:
     """
